@@ -162,30 +162,3 @@ iframe {
         }
     </style>
 </head>
-.image-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espaço entre as imagens */
-    flex-wrap: wrap; /* Permite que quebrem linha em telas menores */
-}
-
-.image-container img {
-    width: 45%; /* Define a largura para que caibam lado a lado */
-    max-width: 400px; /* Limita o tamanho máximo */
-    height: auto; /* Mantém a proporção */
-    border: 2px solid #ccc;
-    border-radius: 5px; /* Cantos levemente arredondados */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.image-container img:hover {
-    transform: scale(1.05); /* Efeito de leve zoom ao passar o mouse */
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .image-container img {
-        width: 90%; /* Em telas menores, cada imagem ocupa a largura total */
-    }
-}
