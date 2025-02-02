@@ -131,3 +131,34 @@ iframe {
         padding: 20px;
     }
 }
+<head>
+    <style>
+        /* Estilização da seção de vídeos */
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        /* Ajuste dos iframes */
+        .video-container iframe {
+            width: 32%; /* Ocupa 32% da largura para alinhar 3 vídeos lado a lado */
+            height: 250px;
+            min-width: 280px; /* Evita que fiquem muito pequenos em telas pequenas */
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 900px) {
+            .video-container iframe {
+                width: 48%; /* Se a tela for pequena, dois vídeos por linha */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .video-container iframe {
+                width: 100%; /* Em telas menores, os vídeos ficam empilhados */
+            }
+        }
+    </style>
+</head>
