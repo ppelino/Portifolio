@@ -1,0 +1,133 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fundo com imagem elegante */
+body {
+    background-image: url('template2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Barra de navegação */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Seções */
+.section-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+/* Links sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Botão Fale Conosco */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FFD700;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+}
+
+.floating-button:hover {
+    background: #ffcc00;
+}
+
+/* Estilização dos vídeos */
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .section-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
