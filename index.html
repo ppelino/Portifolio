@@ -191,12 +191,31 @@
     </div>
 </section>
 
-
 <footer>
     <p>&copy; 2025 Edson Gomes Braz. Todos os direitos reservados.</p>
 </footer>
 
-<a href="#contato" class="floating-button">Fale Conosco</a>
+<!-- Botão flutuante para abrir o formulário -->
+<a href="#" class="floating-button" onclick="document.getElementById('contact-modal').style.display='block'">Fale Conosco</a>
+
+<!-- Modal do formulário -->
+<div id="contact-modal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+    <div class="modal-content" style="background:#fff; padding:20px; max-width:500px; margin:100px auto; border-radius:10px; position:relative;">
+        <span class="close" onclick="document.getElementById('contact-modal').style.display='none'" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
+        <h2>Fale Conosco</h2>
+        <form action="https://formspree.io/f/mldgplzb" method="POST">
+            <label>
+                Seu e-mail:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Sua mensagem:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
